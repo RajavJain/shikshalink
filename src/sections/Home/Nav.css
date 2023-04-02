@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header__left img {
+    width: 12rem;
+  }
+  .header__left {
+    margin-left:10rem;
+  }
+  
+  .header__right {
+    display: flex;
+    margin-right:10rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .option {
+    margin-right: 5rem;
+    cursor: pointer;
+    font-weight:600;
+    font-size: 1.2rem;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .option:hover {
+    color: #0077ff;
+  }
+  
