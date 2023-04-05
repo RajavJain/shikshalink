@@ -1,26 +1,32 @@
 import React from "react";
 import "./Nav.css";
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 function Nav() {
-
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-  
-   
-  }, []);
   return (
-    <nav className="header">
-      <div className="header__left">
-       <img src="https://18pixels.com/img/18pixels.png" alt="Shikshalink-logo" />
+    <header className="header">
+      <div className="container">
+        <Link to="/" className="header__link">
+          <img src="https://18pixels.com/img/18pixels.png" alt="logo"></img>
+        </Link>
+        <nav className="primary-navigation">
+          <ul role="list" class="nav-list">
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/About">About</Link>
+            </li>
+            <li>
+              <Link to="/Services">Services</Link>
+            </li>
+            <li>
+              <Link to="/Contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div className="header__right">
-        <span className="option">Home</span>
-        <span className="option">About</span>
-        <span className="option">Services</span>
-        <span className="option">Projects</span>
-      </div>
-    </nav>
+    </header>
   );
 }
 
