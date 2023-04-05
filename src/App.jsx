@@ -3,10 +3,10 @@ import { Routes, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import Nav from "./pages/Home/Nav";
 import Home from "./pages/Home/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Jobs from "./pages/Jobs";
-import Services from "./pages/Services";
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
+import Jobs from "./pages/Jobs/Jobs";
+import Services from "./pages/Services/Services";
 
 
 function App() {
